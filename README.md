@@ -1,3 +1,13 @@
+This is the Final project Made by : 
+Justin Kroeger
+Lauren Melendez
+Jigyasu Walia
+Michael Reilly
+
+
+Goal: to desig a website that would help users review and discuss various movies available on internet via different streaming platforms.
+
+
 to install dependencies run "npm install"
 to run server run "npm start"
 
