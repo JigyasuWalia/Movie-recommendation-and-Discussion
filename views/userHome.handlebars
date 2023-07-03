@@ -1,0 +1,38 @@
+<section>
+    
+    <h1 class="center-text">{{data.userData.firstName}} {{data.userData.lastName}}</h1>
+
+    <button onClick="window.location.href = '/logout';" id="loginLink" class="btn btn-primary">Log Out</button>
+
+    <button onClick="window.location.href = '/private/trending';" id="trendingLink" class="btn btn-primary">Trending</button>
+
+    <button onClick="window.location.href = '/private/search';" id="search-btn" class="btn btn-primary">Search</button>
+
+    <div class='flex-container'>
+        <div id="watch-list">
+            <h2>My Watch List</h2>
+            <ul>
+                {{#each data.watchList}}
+                    <li>
+                        <a href="/private/movie/{{this.id}}">{{this.title}}</a>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <div id="discussion-list">
+            <h2>My Discussions</h2>
+            <ul>
+                {{#each data.discussions}}
+                        <li>
+                            <a href="/private/discussion/{{this._id}}">{{this.discussionTitle}}</a>
+                        </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    
+    
+
+
+</section>

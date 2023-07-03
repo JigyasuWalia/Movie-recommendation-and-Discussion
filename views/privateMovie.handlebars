@@ -1,0 +1,84 @@
+<h1 id = 'movie-id' hidden>{{data.movie.tmdbID}}</h1>
+
+<a href="/" class = 'home-btn'><h1>Back To Home</h1></a> 
+
+<h1 class = 'center-text'>{{data.tmdbMovie.title}}</h1>
+
+<div class='flex-container' id="movie-container">
+
+
+    <img src=https://image.tmdb.org/t/p/w500{{data.tmdbMovie.poster_path}} alt="{{data.tmdbMovie.title}} poster" id = 'movie-poster'>
+
+    <div class = "movie-info">
+        <h2 id="avg-rating">Average Rating: {{data.movie.averageRating}}</h2>
+        <div><h2>Overview: </h2><p>{{data.tmdbMovie.overview}}</p></div>
+        <div>
+            <h2>Genre: </h2> 
+            <ul>
+                {{#each data.tmdbMovie.genres}}
+                <li>
+                    {{this.name}}
+                </li> 
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class = 'btn-list'>
+        <button id="watchlist-btn" class = "btn btn-danger">Add to Watch List</button>
+        <br>
+        <button id = "discussion-btn" class = "btn btn-danger">Create a Discussion</button>
+    </div>
+
+</div>
+
+<div class='social-tab'>
+
+    <div id= "movie-discussions">
+        <h2>Discussions</h2>
+        <ul>
+            {{#each data.discussions}}
+                    <li>
+                        <a href="/public/discussion/{{this._id}}">{{this.discussionTitle}}</a>
+                    </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div id="rating-form" class = "movie-form">
+
+        <h2>Leave A Review</h2>
+
+        <form>
+            <label for="rating">Rating (1-10)</label>
+            <input type="number" name = "rating" id="rating" min="1" max="10" required>
+            <br>
+            <label for="review">Review</label>
+            <input type="text" name="review" id="review" required>
+            <br>
+            <button id="send-review"  class="btn btn-primary">Send Review</button>
+        </form>
+    </div>
+
+    <div id="discussion-form" class = "movie-form"hidden>
+
+        <h2>Start a Discussion</h2>
+
+        <form>
+            <label for="discussionTitle">Discussion Title</label>
+            <input type="text" name = "discussionTitle" id="discussionTitle" required>
+            <br>
+            <label for="discussionContent">Discussion Content</label>
+            <input type="text" name="discussionContent" id="discussionContent" required>
+            <br>
+            <label for="isSpoiler">Is Spoiler?</label>
+            <input type="radio" name="isSpoiler" id="isSpoiler">
+            <br>
+            <button id="send-discussion"  class="btn btn-primary">Create Discussion</button>
+        </form>
+    </div>
+
+</div>
+
+
+<script src = "/privateMovie.js"></script>

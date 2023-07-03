@@ -1,0 +1,177 @@
+html, body, *
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo
+{
+    text-align: center;
+}
+
+.movie-info
+{
+
+    width: 33%;
+}
+
+#movie-poster
+{
+    max-width: 20%;
+}
+
+.movie-display
+{
+    height: 50%;   
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#loginLink, #signupLink
+{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.center-text
+{
+    text-align: center;
+}
+
+.movie-li
+{
+    list-style-type: none;
+    position: relative;
+}
+
+#movie-list
+{
+    width: 33%;
+}
+
+#movie-search
+{
+    position: relative;
+    left: 10%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#movie-label
+{
+    text-align: center;
+}
+
+.btn-list
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-flex
+{
+    text-align: right;
+}
+
+#search-btn
+{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+#searchForm
+{
+    position: relative;
+    left: 45%;
+}
+
+#submit-btn
+{
+    position: relative;
+    left: 50%;
+}
+
+#movie-container
+{
+    max-height: 700px;
+}
+
+.notFound
+{
+    text-align: center;
+    color: crimson;
+}
+
+.logo-btn:link, .logo-btn:visited, .logo-btn:hover,.logo-btn:active
+{
+    text-decoration: none;
+    color: black;
+}
+
+.home-btn:link, .home-btn:visited, .home-btn:hover,.home-btn:active
+{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.carousel-indicators li {
+    background-color: #999;
+    background-color: rgba(70, 70, 70, 0.25);
+  }
+  
+.carousel-indicators .active {
+    background-color: #444;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+#trendingLink
+{
+    position: fixed;
+    top: 30px;
+    left: 130px;
+}
+
+#discussion-content
+{
+    position: relative;
+    left: 45%;
+    max-width: 33%;
+}
+
+#spoiler-warning
+{
+    background-color: red;
+    position: relative;
+    left: 45%;
+}
+
+#comment-form
+{
+    position: relative;
+    left: 45%;
+}
+
+.movie-form
+{
+    padding-left: 16%;
+}
+
+.social-tab
+{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 15%;
+}
+

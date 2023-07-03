@@ -1,0 +1,21 @@
+<section>
+
+    <p class="notFound">Incorrect Username/Password</p>
+
+    <h1 class = "center-text">Login</h1>
+
+    <div class="flex-container">
+        <form action="/login" method="POST" id="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required pattern="^\S+$">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <input type="submit"class="btn btn-primary">
+            </div> 
+        </form>
+    </div>
+        
+
+        <button onClick="window.location.href = '/signup';" id="signupLink" class="btn btn-primary">Sign Up</button>
+</section>
