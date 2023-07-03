@@ -1,0 +1,9 @@
+{
+    "mongoConfig": {
+      "serverUrl": "mongodb+srv://newUser:123@cluster0.gk8l4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+      "database": "FinalProjectDB"
+    }
+  }
+
+  
+ 
